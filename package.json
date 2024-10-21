@@ -21,7 +21,8 @@
     "build:plugin": "tsc",
     "build:ui": "npm run build --prefix homebridge-ui/public",
     "lint": "eslint --ext .ts --max-warnings=0 .",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "postinstall": "cd homebridge-ui/public && npm install"
   },
   "engines": {
     "node": ">=10.17.0",
