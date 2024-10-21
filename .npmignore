@@ -13,3 +13,4 @@ tslint.json
 nodemon.json
 .env
 homebridge-gsh-**.tgz
+hbconfig

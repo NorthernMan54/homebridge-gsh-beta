@@ -12,8 +12,8 @@ const jwtHelper = new JwtHelperService();
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit, OnDestroy {
-  private linkDomain = 'https://homebridge-gsh.iot.oz.nu';
-  private linkUrl = this.linkDomain + '/link-account';
+  private linkDomain;
+  private linkUrl: string;
 
   private popup: Window;
   private originCheckInterval;
@@ -45,6 +45,15 @@ export class AppComponent implements OnInit, OnDestroy {
       this.pluginConfig = configBlocks[0];
       window.homebridge.showSchemaForm();
     }
+
+    console.log('pluginConfig', this.pluginConfig);
+
+    if (this.pluginConfig.beta) {
+      console.log('Using beta server');
+    }
+
+    this.linkDomain = this.pluginConfig.beta ? 'https://beta-gsh.homebridge.ca' : 'homebridge-gsh.iot.oz.nu';
+    this.linkUrl = this.linkDomain + '/link-account';
 
     this.parseToken();
     this.ready = true;

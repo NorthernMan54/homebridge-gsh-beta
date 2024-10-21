@@ -5,8 +5,6 @@
 
 <span align="center">
 
-### [Plugin End Of Life - 1st of December 2024](https://github.com/oznu/homebridge-gsh/releases/tag/v2.2.3)
-
 # Homebridge to Google Smart Home
 
 [![npm](https://img.shields.io/npm/v/homebridge-gsh.svg)](https://www.npmjs.com/package/homebridge-gsh)
@@ -27,53 +25,53 @@
 
 Control your supported [Homebridge](https://github.com/nfarina/homebridge) accessories from any Google Home speaker or the Google Home mobile app. Inspired by [homebridge-alexa](https://github.com/NorthernMan54/homebridge-alexa).
 
-* [Supported Device Types](#supported-device-types)
-* [Installation Instructions](#installation-instructions)
-* [Configuration](#configuration)
-* [Known Issues](#known-issues)
-* [Troubleshooting](#troubleshooting)
-* [Credits](#credits)
-* [License](#license)
-* [Sponsors](#sponsors)
+- [Supported Device Types](#supported-device-types)
+- [Installation Instructions](#installation-instructions)
+- [Configuration](#configuration)
+- [Known Issues](#known-issues)
+- [Troubleshooting](#troubleshooting)
+- [Credits](#credits)
+- [License](#license)
+- [Sponsors](#sponsors)
 
 ## Supported Device Types
 
-* Switch
-* Outlet
-* Light Bulb
-    * On / Off
-    * Brightness
-    * Color (Hue/Saturation)
-* Fan (On / Off)
-* Fan v2 (On / Off)
-* Window
-* Window Coverings
-* Door
-* Garage Door (2FA required)
-* Thermostat / Heater Cooler
-* Television (On / Off)
-* Lock Mechanism (2FA required)
-* Security System (2FA required)
-* Temperature Sensor
-* Humidity Sensor
+- Switch
+- Outlet
+- Light Bulb
+  - On / Off
+  - Brightness
+  - Color (Hue/Saturation)
+- Fan (On / Off)
+- Fan v2 (On / Off)
+- Window
+- Window Coverings
+- Door
+- Garage Door (2FA required)
+- Thermostat / Heater Cooler
+- Television (On / Off)
+- Lock Mechanism (2FA required)
+- Security System (2FA required)
+- Temperature Sensor
+- Humidity Sensor
 
-*Note: Google Smart Home does not currently support all "sensor" devices such as Motion Sensors or Occupancy Sensors etc.*
+_Note: Google Smart Home does not currently support all "sensor" devices such as Motion Sensors or Occupancy Sensors etc._
 
 ## Installation Instructions
 
 #### Option 1: Install via Homebridge Config UI X:
 
-Search for "Google Home" in [homebridge-config-ui-x](https://github.com/oznu/homebridge-config-ui-x) and install `homebridge-gsh`.
+Search for "Google Home Beta" in [homebridge-config-ui-x](https://github.com/oznu/homebridge-config-ui-x) and install `homebridge-gsh-beta`.
 
 #### Option 2: Manually Install:
 
 ```
-sudo npm install -g homebridge-gsh
+sudo npm install -g @northernman54/homebridge-gsh-beta
 ```
 
 ## Configuration
 
-To configure `homebridge-gsh` you must also be running [homebridge-config-ui-x](https://github.com/oznu/homebridge-config-ui-x).
+To configure `homebridge-gsh-beta` you must also be running [homebridge-config-ui-x](https://github.com/oznu/homebridge-config-ui-x).
 
 1. Navigate to the Plugins page in [homebridge-config-ui-x](https://github.com/oznu/homebridge-config-ui-x).
 2. Click the **Settings** button for the Google Smart Home plugin.
@@ -93,8 +91,8 @@ Homebridge must be running in insecure mode to allow accessory control via this 
 
 This plugin **must** only be configured on one Homebridge instance on your network as the plugin will discover all your other Homebridge instances and be able to control them. For this to work:
 
-* all instances must be running [in insecure mode](https://github.com/oznu/homebridge-config-ui-x/wiki/Enabling-Accessory-Control)
-* all instances must have the same PIN defined in the `config.json`
+- all instances must be running [in insecure mode](https://github.com/oznu/homebridge-config-ui-x/wiki/Enabling-Accessory-Control)
+- all instances must have the same PIN defined in the `config.json`
 
 ## Known Issues
 
@@ -128,7 +126,7 @@ Please see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Credits
 
-* [NorthernMan54](https://github.com/NorthernMan54) - developer of the [Hap-Node-Client](https://github.com/NorthernMan54/Hap-Node-Client) module which is used by this plugin.
+- [NorthernMan54](https://github.com/NorthernMan54) - developer of the [Hap-Node-Client](https://github.com/NorthernMan54/Hap-Node-Client) module which is used by this plugin.
 
 ## License
 
@@ -136,7 +134,7 @@ Copyright (C) 2019 oznu
 
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 
-This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the [GNU General Public License](./LICENSE) for more details.
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the [GNU General Public License](./LICENSE) for more details.
 
 ## Sponsors
 

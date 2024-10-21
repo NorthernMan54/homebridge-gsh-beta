@@ -1,17 +1,17 @@
 {
   "private": false,
-  "name": "homebridge-gsh",
-  "displayName": "Homebridge Google Smart Home",
-  "version": "2.2.3",
+  "name": "@northernman54/homebridge-gsh-beta",
+  "displayName": "Homebridge Google Smart Home Beta",
+  "version": "3.0.0",
   "description": "Google Smart Home",
   "license": "GPL-3.0",
   "author": "oznu <dev@oz.nu>",
   "repository": {
     "type": "git",
-    "url": "git://github.com/oznu/homebridge-gsh.git"
+    "url": "git://github.com/northernman54/homebridge-gsh-beta.git"
   },
   "bugs": {
-    "url": "https://github.com/oznu/homebridge-gsh/issues"
+    "url": "https://github.com/northernman54/homebridge-gsh-beta/issues"
   },
   "main": "dist/index.js",
   "scripts": {
@@ -58,6 +58,7 @@
     "rxjs": "^6.6.3"
   },
   "devDependencies": {
+    "@types/express-serve-static-core": "^4.17.30",
     "@types/fs-extra": "^9.0.2",
     "@types/node": "^14.11.8",
     "@types/ws": "^7.2.7",
@@ -67,11 +68,29 @@
     "eslint": "^7.11.0",
     "hap-node-client": "^0.1.5",
     "hap-nodejs": "^0.8.2",
-    "homebridge": "^1.3.3",
+    "homebridge": "^1.8.4",
     "nodemon": "^2.0.5",
     "request-promise": "^4.2.6",
     "rimraf": "^3.0.2",
     "ts-node": "^9.0.0",
     "typescript": "^4.0.3"
-  }
+  },
+  "nodemonConfig": {
+    "watch": [
+      "src"
+    ],
+    "ext": "ts",
+    "ignore": [],
+    "exec": "tsc && DEBUG= homebridge -U ./hbConfig -T -D -P .",
+    "signal": "SIGTERM",
+    "env": {
+      "NODE_OPTIONS": "--trace-warnings"
+    }
+  },
+  "bundleDependencies": [
+    "@oznu/ws-connect",
+    "fs-extra",
+    "hap-node-client",
+    "rxjs"
+  ]
 }

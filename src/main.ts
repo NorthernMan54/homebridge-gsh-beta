@@ -28,9 +28,13 @@ export class Plugin {
       v: this.package.version,
       n: this.package.name,
     };
+    const serverUrl = this.config.beta ? 'wss://beta-gsh.homebridge.ca/socket' : 'wss://homebridge-gsh.iot.oz.nu/socket';
 
-    // establish new websocket connection
-    const socket = new WebSocket(`wss://homebridge-gsh.iot.oz.nu/socket?${querystring.stringify(qs)}`);
+    if (this.config.beta) {
+      this.log.info('Using beta server');
+    }
+
+    const socket = new WebSocket(`${serverUrl}?${querystring.stringify(qs)}`);
 
     this.hap = new Hap(socket, this.log, this.homebridgeConfig.bridge.pin, this.config);
 

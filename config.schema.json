@@ -1,5 +1,5 @@
 {
-  "pluginAlias": "google-smarthome",
+  "pluginAlias": "google-smarthome-beta",
   "pluginType": "platform",
   "singular": true,
   "customUi": true,
@@ -68,6 +68,10 @@
       },
       "forceFahrenheit": {
         "title": "Force Degrees Fahrenheit",
+        "type": "boolean"
+      },
+      "beta": {
+        "title": "Access to Beta Features",
         "type": "boolean"
       }
     }
@@ -178,7 +182,12 @@
           "type": "help",
           "helpvalue": "<h5>Force Fahrenheit</h5><em class='primary-text'>Some Homebridge thermostat plugins do not correctly report they are using Fahrenheit temperature units. Enabling this option will force all thermostats accessories to display temperature units in Fahrenheit.</em>"
         },
-        "forceFahrenheit"
+        "forceFahrenheit",
+        {
+          "type": "help",
+          "helpvalue": "<h5>Access to Beta Features</h5><em class='primary-text'>Enable this option to access beta features. Beta features are experimental and may not work as expected.</em>"
+        },
+        "beta"
       ]
     }
   ]
