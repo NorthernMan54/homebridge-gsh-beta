@@ -12,10 +12,10 @@ jobs:
         node-version: [lts/-n, lts/*, latest]
 
     steps:
-      - uses: actions/checkout
+      - uses: actions/checkout@latest
 
       - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node
+        uses: actions/setup-node@latest
         with:
           node-version: ${{ matrix.node-version }}
 
