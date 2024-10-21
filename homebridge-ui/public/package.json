@@ -5,7 +5,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve --port 4500 --no-live-reload",
-    "build": "ng build --prod --output-path ../../dist/homebridge-ui/public",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider ng build --prod --output-path ../../dist/homebridge-ui/public",
     "test": "ng test",
     "lint": "ng lint"
   },
