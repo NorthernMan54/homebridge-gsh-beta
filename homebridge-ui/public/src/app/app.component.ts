@@ -12,7 +12,7 @@ const jwtHelper = new JwtHelperService();
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit, OnDestroy {
-  private linkDomain;
+  private linkDomain: string;
   private linkUrl: string;
 
   private popup: Window;
@@ -52,9 +52,10 @@ export class AppComponent implements OnInit, OnDestroy {
       console.log('Using beta server');
     }
 
-    this.linkDomain = this.pluginConfig.beta ? 'https://beta-gsh.homebridge.ca' : 'homebridge-gsh.iot.oz.nu';
+    this.linkDomain = this.pluginConfig.beta ? 'https://beta-gsh.homebridge.ca' : 'https://homebridge-gsh.iot.oz.nu';
     this.linkUrl = this.linkDomain + '/link-account';
 
+    console.log('linkUrl', this.linkUrl);
     this.parseToken();
     this.ready = true;
 
@@ -70,6 +71,7 @@ export class AppComponent implements OnInit, OnDestroy {
   linkAccount() {
     window.addEventListener('message', this.windowMessageListener, false);
 
+    console.log('Opening popup', this.linkUrl);
     const w = 450;
     const h = 700;
     const y = window.top.outerHeight / 2 + window.top.screenY - (h / 2);
