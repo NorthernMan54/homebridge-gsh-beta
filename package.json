@@ -2,7 +2,7 @@
   "private": false,
   "name": "@northernman54/homebridge-gsh-beta",
   "displayName": "Homebridge Google Smart Home Beta",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Google Smart Home",
   "license": "GPL-3.0",
   "author": "oznu <dev@oz.nu>",
