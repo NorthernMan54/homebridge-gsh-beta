@@ -28,6 +28,10 @@ export class Plugin {
       v: this.package.version,
       n: this.package.name,
     };
+
+    if (this.config.beta === undefined) {
+      this.config.beta = true;  // Default to beta server
+    }
     const serverUrl = this.config.beta ? 'wss://beta-gsh.homebridge.ca/socket' : 'wss://homebridge-gsh.iot.oz.nu/socket';
 
     if (this.config.beta) {
