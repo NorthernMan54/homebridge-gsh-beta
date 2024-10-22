@@ -40,6 +40,7 @@ export class AppComponent implements OnInit, OnDestroy {
       this.pluginConfig = {
         name: 'Google Smart Home',
         platform: this.schema.pluginAlias,
+        beta: true,
       };
     } else {
       this.pluginConfig = configBlocks[0];
