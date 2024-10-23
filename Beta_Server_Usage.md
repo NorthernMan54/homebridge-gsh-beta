@@ -2,7 +2,7 @@
 
 Before completing this setup, you will need to provide to me your `Google Home` login/email, so I can enroll your account in the Beta service. Please use the Homebridge discord server and direct message/chat to share this.
 
-Please note, configuring the beta environemnt will require you to remove your existing Homebridge Google Smart Home configuration, so I you have a setup you don't want to redo, don't do this.
+Please note, configuring the beta environemnt will require you to remove your existing Homebridge Google Smart Home configuration, so if you have a setup you don't want to redo, don't do this.
 
 1 - In the homebridge UI under Plugins, disable `Homebridge Google Smart Home` in the homebridge UI
 
@@ -10,7 +10,7 @@ Please note, configuring the beta environemnt will require you to remove your ex
 
 - Settings -> Services -> Works With Google -> Homebridge ( Should be at the top of the screen ), unlink account
 
-3 - In the Homebridge UI under Plugins, search for `GSH` and install `Homebridge Gsh Beta` - current version is v3.0.4, and install
+3 - In the Homebridge UI under Plugins, search for `GSH` and install `Homebridge Gsh Beta` - current version is v3.0.4
 
 4 - Afer installing, the Homebridge UI should display a `LINK ACCOUNT` button, click this
 
