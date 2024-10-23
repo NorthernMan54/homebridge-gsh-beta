@@ -7,7 +7,7 @@
   "license": "GPL-3.0",
   "author": "oznu <dev@oz.nu>",
   "repository": {
-    "url": "https://github.com/NorthernMan54/homebridge-gsh-beta"
+    "url": "git+https://github.com/NorthernMan54/homebridge-gsh-beta.git"
   },
   "bugs": {
     "url": "https://github.com/northernman54/homebridge-gsh-beta/issues"
