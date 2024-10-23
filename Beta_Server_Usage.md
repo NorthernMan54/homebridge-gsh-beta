@@ -42,3 +42,9 @@ Please note, configuring the beta environemnt will require you to remove your ex
 ## Additional notes
 
 For some reason, in my configuration I need to restart the GSH plugin, and unlink and re-link in the google home app for all my devices to appear.
+
+# Adding Test Users from Google Actions Console
+
+https://developers.home.google.com/cloud-to-cloud/test#share-access
+
+In step 3, Add has been renamed to `Grant Access`
