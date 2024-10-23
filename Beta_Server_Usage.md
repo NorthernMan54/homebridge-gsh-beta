@@ -6,11 +6,11 @@ Before completing this setup, you will need to provide to me your `Google Home` 
 
 1 - You should receive an email with the subject `homebridge-beta-22362 is being deployed`
 
-2 - Select the link `Open Console` or this url - https://console.actions.google.com/channeloptin/uid/000000ab61d4499b?hl=en
+2 - Select the link `Open Console` or this url - https://console.actions.google.com/u/1/project/homebridge-beta-22362/simulator
 
 3 - Authenticate your google smart home account
 
-4 - Select the Tab at the top of the screen, and enable testing.
+4 - Select the Test Tab at the top of the screen, and Start Testing. `Version Alpha`
 
 Your google account should now be enabled for testing the skill
 
