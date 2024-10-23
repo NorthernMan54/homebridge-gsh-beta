@@ -2,6 +2,20 @@
 
 Before completing this setup, you will need to provide to me your `Google Home` login/email, so I can enroll your account in the Beta service. Please use the Homebridge discord server and direct message/chat to share this.
 
+## Enabling the Beta Test Google Smart Home Action on your Google Account
+
+1 - You should receive an email with the subject `homebridge-beta-22362 is being deployed`
+
+2 - Select the link `Open Console` or this url - https://console.actions.google.com/channeloptin/uid/000000ab61d4499b?hl=en
+
+3 - Authenticate your google smart home account
+
+4 - Select the Tab at the top of the screen, and enable testing.
+
+Your google account should now be enabled for testing the skill
+
+## Account Linking
+
 Please note, configuring the beta environemnt will require you to remove your existing Homebridge Google Smart Home configuration, so if you have a setup you don't want to redo, don't do this.
 
 1 - In the homebridge UI under Plugins, disable `Homebridge Google Smart Home` in the homebridge UI
