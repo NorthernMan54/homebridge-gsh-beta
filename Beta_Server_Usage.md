@@ -1,5 +1,7 @@
 # Using the Homebridge-gsh beta environment
 
+Please note, configuring the beta environemnt will require you to remove your existing Homebridge Google Smart Home configuration, so if you have a setup you don't want to redo, don't do this.
+
 Before completing this setup, you will need to provide to me your `Google Home` login/email, so I can enroll your account in the Beta service. Please use the Homebridge discord server and direct message/chat to share this.
 
 ## Enabling the Beta Test Google Smart Home Action on your Google Account
