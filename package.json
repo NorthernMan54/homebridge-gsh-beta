@@ -54,7 +54,8 @@
   "dependencies": {
     "@oznu/ws-connect": "^2.2.0",
     "fs-extra": "^9.0.1",
-    "rxjs": "^6.6.3"
+    "rxjs": "^6.6.3",
+    "hap-node-client": "^0.1.5"
   },
   "devDependencies": {
     "@types/express-serve-static-core": "^4.17.30",
@@ -65,7 +66,6 @@
     "@typescript-eslint/parser": "^4.4.1",
     "actions-on-google": "^2.13.0",
     "eslint": "^7.11.0",
-    "hap-node-client": "^0.1.5",
     "hap-nodejs": "^0.8.2",
     "homebridge": "^1.8.4",
     "nodemon": "^2.0.5",
@@ -85,11 +85,5 @@
     "env": {
       "NODE_OPTIONS": "--trace-warnings"
     }
-  },
-  "bundleDependencies": [
-    "@oznu/ws-connect",
-    "fs-extra",
-    "hap-node-client",
-    "rxjs"
-  ]
+  }
 }
